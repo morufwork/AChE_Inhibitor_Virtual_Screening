@@ -1,0 +1,5 @@
+ZINC_ID,AChE_Probability,Model,Source_Dataset
+ZINC_87,0.534867779,Random Forest,ChEMBL
+ZINC_108,0.548439026,Random Forest,ChEMBL
+ZINC_221,0.585769661,Random Forest,ChEMBL
+ZINC_234,0.707773932,Random Forest,ChEMBL

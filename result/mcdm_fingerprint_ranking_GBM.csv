@@ -1,0 +1,8 @@
+Model-FP,WSM_Score,WSM_Rank,TOPSIS_Score,TOPSIS_Rank,Average_Rank
+Morgan_ count,0.970755834,1,0.981202165,1,1
+RDKit_topological,0.795383258,3,0.882459711,2,2.5
+ ECFP4_binary_morgan,0.900871465,2,0.84198521,3,2.5
+Avalon,0.65734394,4,0.723602934,4,4
+Topological_torsion,0.439758644,5,0.658304301,5,5
+Atom_pair,0.413992627,6,0.504487451,6,6
+MACCS_keys,0,7,0,7,7

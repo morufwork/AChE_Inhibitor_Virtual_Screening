@@ -13,7 +13,7 @@ The workflow covers data cleaning and standardization, duplicate/overlap checks,
 │   ├── data_literature/      # Human and eel literature validation sets, SDF files, and relabeled CSVs
 │   ├── orthologous/          # Cow, mouse, rat, and ray orthologous AChE datasets
 │   ├── pubchem data/         # PubChem raw, merged, and standardized AChE data
-│   └── standardized_zinc.csv # ZINC compounds prepared for virtual screening
+│   └── zinc/                 # ZINC compounds prepared for virtual screening
 ├── result/                   # Cross-validation metrics, MCDM rankings, and ZINC predictions
 ├── *.ipynb                   # Data processing, modeling, validation, and screening notebooks
 └── RandomForest_PlattCalibrated.joblib
@@ -28,7 +28,8 @@ The workflow covers data cleaning and standardization, duplicate/overlap checks,
 | `dataset/pubchem data/` | PubChem assay records, merged data, and standardized SMILES/class labels. |
 | `dataset/data_literature/` | Human and eel literature test sets in SDF and CSV form, including relabeled clean files. |
 | `dataset/orthologous/` | Orthologous AChE datasets for cow, mouse, rat, and ray, including cleaned versions. |
-| `dataset/standardized_zinc.csv` | Standardized ZINC SMILES used for virtual screening. |
+| `dataset/zinc/standardized_zinc.csv` | Standardized ZINC SMILES used for virtual screening. |
+| `dataset/zinc/standardized_zinc_with_ids.csv` | Standardized ZINC SMILES with generated ZINC IDs used to join screening outputs. |
 | `result/` | Model metrics, fingerprint rankings, and prediction outputs. |
 
 ## Notebooks
@@ -47,6 +48,7 @@ The workflow covers data cleaning and standardization, duplicate/overlap checks,
 | `calibrated_model_descriptor_external_validation.ipynb` | Loads the calibrated Random Forest model and validates it on external descriptor/fingerprint datasets. |
 | `validation.ipynb` | Runs external validation metrics for saved models and validation datasets. |
 | `linpski.ipynb` | Computes Lipinski rule-of-five descriptors for selected compounds. |
+| `AD.ipynb` | Computes a Morgan-fingerprint applicability domain for prioritized ZINC hits. |
 
 ## Modeling Approach
 
@@ -87,6 +89,7 @@ The ZINC virtual screening outputs are:
 
 - `alt_ZINC_ChEMBL_RF_Morgan_predictions.csv`
 - `alt_ZINC_ChEMBL_RF_Morgan_high_confidence.csv`
+- `zinc_hit_AD.csv`
 
 In the included result files, Random Forest and Extra Trees models with Morgan/ECFP-style fingerprints are among the strongest performers across ROC-AUC, PR-AUC, F1, and MCC.
 

@@ -137,3 +137,21 @@ conda activate ache-vs
 - Several notebooks contain local paths or historical filenames from the analysis process. Check input paths before rerunning notebooks in a new environment.
 - The large `.joblib` model requires Git LFS for GitHub hosting.
 - The files in `result/` are included as generated outputs for reproducibility and inspection.
+
+## Citation
+
+If you use this repository, datasets, notebooks, trained models, or results in your research, please cite the associated publication:
+
+> Adeagbo, M. A., Ibrahim, W. A., & de Azevedo Silveira, S. (2026). Integrating multi-criteria decision-making and machine learning for fingerprint selection and virtual screening of acetylcholinesterase inhibitors. *Journal of Cheminformatics*, 18, [article number]. https://doi.org/10.1186/s13321-026-01300-8
+
+### BibTeX
+
+```bibtex
+@article{Adeagbo2026AChE,
+  author  = {Adeagbo, M. A. and Ibrahim, W. A. and de Azevedo Silveira, S.},
+  title   = {Integrating multi-criteria decision-making and machine learning for fingerprint selection and virtual screening of acetylcholinesterase inhibitors},
+  journal = {Journal of Cheminformatics},
+  year    = {2026},
+  doi     = {10.1186/s13321-026-01300-8},
+  url     = {https://doi.org/10.1186/s13321-026-01300-8}
+}
